@@ -1,0 +1,154 @@
+@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@300&family=Poppins:wght@200&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+}
+
+
+body{
+    position: relative;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+div{
+    margin: auto;
+    justify-content: center;
+    margin-top: 13%;
+    margin-left: 15%;
+}
+
+
+#parent{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 3px solid goldenrod;
+    border-radius: 10px;
+    width: 50vw;
+    height: 50vh;
+    box-shadow: 10px 10px 10px black;
+}
+
+form{
+    position: relative;
+    top: 5%;
+    left:15%;
+}
+
+input{
+    font-size: 2em;
+    display: block;
+    border-radius: 0.3em;
+    align-content: center;
+}
+label{
+    font-size: 2em;
+    font-family: 'Oswald', sans-serif;
+    
+}
+
+#header{
+    position: relative;
+    bottom: 38%;
+    right: 18%;
+    font-size: 64px;
+    font-family: 'Oswald', sans-serif;
+    border-radius: 10px;
+    box-shadow: 2px 2px 2px grey;
+    text-transform: capitalize;
+    
+}
+
+select{
+    font-size: 2em;
+    display: block;
+    border-radius: 0.3em;
+    font-family: 'Oswald', sans-serif;
+}
+
+#submit{
+    position :relative;
+    top:-2.5em;
+    right: 100%;
+    width: 50%;
+    height: 3.5vh;
+    font-family: 'Oswald', sans-serif;
+    font-size: 2em;
+    border-radius: 0.3em;
+    background-color: transparent;
+    vertical-align:middle ;
+}
+
+
+@media screen and (max-width:1100px) {
+body{
+    margin: auto;
+    display: flex;
+    background-size: cover;
+    height: 100vh;
+    }
+
+div {
+    margin: auto;
+    justify-content: center;
+    margin-top: 13%;
+    margin-left: 15%;
+}
+#parent {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 3px solid goldenrod;
+    border-radius: 10px;
+    width: 60vw;
+    height: 70vh;
+    box-shadow: 10px 10px 10px black;
+    overflow: hidden;
+}
+form {
+    position: relative;
+    top: 3%;
+    left: 5%;
+}
+input {
+    font-size: 2em;
+    display: block;
+    border-radius: 0.3em;
+    align-content: center;
+}
+label {
+    font-size: 2em;
+    font-family: 'Oswald', sans-serif;
+}
+#header {
+    position: relative;
+    bottom: 38%;
+    right: 5%;
+    font-size: 50px;
+    font-family: 'Oswald', sans-serif;
+    border-radius: 10px;
+    box-shadow: 2px 2px 2px grey;
+    text-transform: capitalize;
+}
+select {
+    font-size: 2em;
+    display: block;
+    border-radius: 0.3em;
+    font-family: 'Oswald', sans-serif;
+}
+    
+#submit {
+    position: relative;
+    top: 1em;
+    right: 50%;
+    width: 50%;
+    height: 3.5vh;
+    font-family: 'Oswald', sans-serif;
+    font-size: 2em;
+    border-radius: 0.3em;
+    background-color: transparent;
+    vertical-align: middle;
+}
+    
+}

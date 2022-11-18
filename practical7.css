@@ -1,0 +1,70 @@
+@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@300&family=Poppins:wght@200&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+
+body {
+    position: relative;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+div {
+    margin: auto;
+    justify-content: center;
+    margin-top: 13%;
+    margin-left: 15%;
+}
+
+
+#pet_details{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 3px solid goldenrod;
+    border-radius: 10px;
+    width: 50vw;
+    height: 50vh;
+    box-shadow: 10px 10px 10px black;
+}
+
+#header {
+    position: relative;
+    bottom: 38%;
+    right: -2.4%;
+    font-size: 45px;
+    font-family: 'Oswald', sans-serif;
+    border-radius: 10px;
+    box-shadow: 2px 2px 2px grey;
+    text-transform: capitalize;
+
+}
+
+
+table {
+    position: relative;
+    bottom: 1%;
+    right: 15%;
+    font-size: 30px;
+    border: 1px solid black;
+ }
+
+
+ td {
+     border: 1px solid black;
+ }
+
+ th,
+ td {
+     font-weight: bold;
+     border: 1px solid black;
+     padding: 10px;
+     text-align: center;
+ }
+
+ td {
+     font-weight: lighter;
+ }

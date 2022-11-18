@@ -1,0 +1,47 @@
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <div
+      id="parent-div"
+      style="background-color: pink; min-height: 100vh"
+    ></div>
+    <script>
+      let n = 2;
+      const backgroundcolor = [
+        "red",
+        "blue",
+        "green",
+        "yellow",
+        "lightblue",
+        "brown",
+        "lightgreen",
+        "orange",
+        "black",
+      ];
+      const parent = document.getElementById("parent-div");
+
+      const saveInterval = setInterval(() => {
+        const element = document.createElement("h3");
+        element.textContent = `${n * 1} ${n * 2} ${n * 3} ${n * 4} ${n * 5} ${
+          n * 6
+        } ${n * 7} ${n * 8} ${n * 9} ${n * 10} `;
+
+        element.setAttribute(
+          "style",
+          `font-size:${14 + n * 2}px;color:${backgroundcolor[n - 2]}`
+        );
+
+        parent.appendChild(element);
+        n++;
+        if (n == 11) {
+          clearInterval(saveInterval);
+        }
+      }, 5000);
+    </script>
+  </body>
+</html>

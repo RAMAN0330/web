@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <script defer="true" language="javascript" type="text/javascript">
+      function factorial(n) {
+        if (n == 1) {
+          alert(1);
+        } else {
+          var2 = 1;
+          for (i = 1; i <= n; i++) {
+            var2 = var2 * i;
+          }
+          alert(var2);
+        }
+      }
+    </script>
+  </head>
+  <body>
+    <!-- <script language="javascript" type="text/javascript">
+      var1 = 10;
+      var2 = 1;
+      for (i = 1; i <= 10; i++) {
+        var2 = var2 * i;
+      }
+      document.write(var2);
+    </script> -->
+    <form>
+      <label for="n">ENTER NAME : </label>
+      <input type="number" name="n" id="n" />
+      <button onclick="factorial(document.getElementById('n').value)">
+        FACTORIAL
+      </button>
+    </form>
+  </body>
+</html>

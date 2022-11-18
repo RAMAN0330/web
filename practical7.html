@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="practical7.css" />
+    <title>pet data</title>
+     <script src=
+"https://code.jquery.com/jquery-3.5.1.js">
+    </script>
+  </head>
+  <style>
+    body {
+      background-repeat: no-repeat;
+      background-size: cover;
+    }
+  </style>
+  <body
+    background="https://images.pexels.com/photos/2194261/pexels-photo-2194261.jpeg?auto=compress&cs=tinysrgb&w=1600"
+  >
+   <div>
+    <div id="pet_details">
+        <h1 id="header">PET DETAILS</h1>
+        <table id='table'>
+           
+            <tr>
+                <th>NAME</th>
+                <th>AGE</th>
+                <th>WEIGHT</th>
+                <th>TYPE</th>
+                <th>LIKES</th>
+            </tr>
+  
+            <script>
+                $(document).ready(function () {
+  
+                    $.getJSON("pet.json", 
+                            function (data) {
+                        var Pet = '';
+                        $.each(data, function (key, value) {
+                            Pet += '<tr>';
+                            Pet += '<td>' + 
+                                value.Petname + '</td>';
+  
+                            Pet += '<td>' + 
+                                value.Petage + '</td>';
+  
+                            Pet += '<td>' + 
+                                value.Petweight + '</td>';
+  
+                            Pet += '<td>' + 
+                                value.Pettype + '</td>';
+                               
+                            Pet += '<td>' + 
+                                value.Petlike + '</td>';
+  
+                            Pet += '</tr>';
+                        });
+                        $('#table').append(Pet);
+                    });
+                });
+            </script>
+    </div>
+   </div>
+
+  </body>
+</html>

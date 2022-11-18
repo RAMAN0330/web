@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Ques8</title>
+    <!-- <script>
+        function change()
+        { 
+            alert("Entered");
+            $("#first").css("color: red;");
+        }
+    </script> -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script>
+      $(document).ready(function () {
+        $("button").click(function () {
+          $("button").css({
+            "background-color": "grey",
+            border: "0px",
+            "border-radius": "10px",
+            height: "30px",
+            width: "10%",
+            "font-weight": "bolder",
+            color: "white",
+            "margin-left": "100px",
+          });
+          $("h1").css({ color: "blue" });
+          $("#first").css({
+            "margin-left": "250px",
+            color: "red",
+            display: "inline-block",
+          });
+          $("body").css({
+            border: "5px solid black",
+            "border-radius": "15px",
+            margin: "30px 100px",
+          });
+        });
+      });
+    </script>
+  </head>
+  <style>
+    body {
+      background-repeat: no-repeat;
+      background-size: cover;
+    }
+    body.background {
+      opacity: 0.2;
+    }
+  </style>
+  <body
+    background="https://th.bing.com/th/id/OIP.wPQlFrGDH0NhCR9AmaUEkAHaDt?w=328&h=175&c=7&r=0&o=5&dpr=1.5&pid=1.7"
+  >
+    <div id="first">
+      <h1>B.Sc. Hons CS</h1>
+      <h3>Fees</h3>
+      <h3>Elgibility Criteria</h3>
+      <h3>Paper</h3>
+      <h3>Future Scope</h3>
+    </div>
+    <div id="second" style="display: inline-block">
+      <h3>: 90K(approx)</h3>
+      <h3>: Mathematics and Computer Science</h3>
+      <h3>
+        : Language Papers,Algorithms, Data Structures,DBMS,Microprocessors.etc
+      </h3>
+      <h3>: Average B.Sc. CS salary in india of 6 LPA</h3>
+    </div>
+    <br />
+    <button onclick="change()">CHANGE STYLE</button>
+    <br /><br /><br />
+  </body>
+</html>

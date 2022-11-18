@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Ques11</title>
+  </head>
+  <body>
+    <div
+      id="signup"
+      style="
+        border: 4px solid black;
+        display: inline-block;
+        width: 40%;
+        height: 450px;
+      "
+    >
+      <h2 style="text-align: center">
+        <u><b>Enter Signup Details</b></u>
+      </h2>
+      <div style="display: inline-block; position: absolute; left: 100px">
+        * Name <br /><br />
+        * Age <br /><br />
+        * Phone <br /><br />
+        * Gender <br /><br />
+        * Password<br /><br />
+      </div>
+      <div style="display: inline-block; position: absolute; left: 230px">
+        <form action="submit.php" method="post">
+          <input type="text" value="" name="NAME" /><br /><br />
+          <input type="int" value="" name="AGE" /><br /><br />
+          <input type="text" value="" name="PHONE" /><br /><br />
+          <input type="text" value="" name="GENDER" /><br /><br />
+          <input type="password" value="" name="PASSWORD" /><br /><br />
+
+          <input
+            type="submit"
+            value="Signup"
+            style="
+              background-color: red;
+              border: 0px;
+              width: 50%;
+              height: 30px;
+              border-radius: 10px;
+              color: white;
+              font-size: large;
+              font-weight: bold;
+            "
+          />
+        </form>
+      </div>
+    </div>
+    <div
+      id="signin"
+      style="
+        border: 4px solid black;
+        display: inline-block;
+        width: 40%;
+        height: 450px;
+      "
+    >
+      <h2 style="text-align: center">
+        <u><b>Enter Signin Details</b></u>
+      </h2>
+      <div style="display: inline-block; position: absolute; left: 940px">
+        * Phone <br /><br />
+        * Password<br /><br />
+      </div>
+      <div style="display: inline-block; position: absolute; left: 1100px">
+        <form action="verify.php" method="post">
+          <input type="text" value="" name="PHONE" /><br /><br />
+          <input type="password" value="" name="PASSWORD" /><br /><br />
+
+          <input
+            type="submit"
+            value="Signin"
+            style="
+              background-color: red;
+              border: 0px;
+              width: 50%;
+              height: 30px;
+              border-radius: 10px;
+              color: white;
+              font-size: large;
+              font-weight: bold;
+            "
+          />
+        </form>
+      </div>
+    </div>
+  </body>
+</html>

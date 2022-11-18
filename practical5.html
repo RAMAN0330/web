@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <style>
+    table {
+      border: 2px solid black;
+    }
+
+    th {
+      border: 1px solid black;
+      align-items: center;
+    }
+    td {
+      border: 1px solid black;
+      align-items: center;
+    }
+  </style>
+  <body>
+    <p id="para">
+      Lorem ipsum dolor sit amet consectetur adipisicing elit. Unde non
+      reiciendis veniam? Debitis natus in ipsa officia sint impedit quibusdam
+      repudiandae deserunt deleniti enim iusto, quaerat expedita numquam
+      voluptates similique voluptatum nisi provident consequuntur, minus totam
+      nam id illo. Eos illo, maxime debitis aliquid voluptate earum ullam
+      officia consequatur placeat voluptatibus modi error veniam omnis eligendi
+      similique ad? Nihil repellendus inventore voluptas nesciunt aspernatur
+      necessitatibus iste dolorem nulla ab pariatur labore ut blanditiis veniam
+      accusantium quo distinctio quae, id libero! Dolores aspernatur tempore
+      temporibus officiis dolor laboriosam numquam error sit! Voluptatum dolorum
+      ut totam laudantium. Nulla enim veniam qui nisi!
+    </p>
+
+    <hr />
+    <br /><br />
+
+    <table>
+      <tr>
+        <th>
+          <button class="color" value="RED" style="color: red">RED</button>
+        </th>
+        <th>
+          <button class="color" value="green" style="color: green">
+            GREEN
+          </button>
+        </th>
+        <th>
+          <button class="color" value="BLUE" style="color: blue">BLUE</button>
+        </th>
+      </tr>
+      <tr>
+        <td>
+          <button class="size" value="10">10</button>
+        </td>
+        <td><button class="size" value="20">20</button></td>
+        <td><button class="size" value="30">30</button></td>
+      </tr>
+
+      <tr>
+        <td><button class="font" value="sans-serif">sans-serif</button></td>
+        <td><button class="font" value="Courier New">Courier New</button></td>
+        <td>
+          <button class="font" value="monospace">monospace</button>
+        </td>
+      </tr>
+    </table>
+  </body>
+  <script>
+    const para = document.getElementById("para");
+
+    const colorbutton = document.getElementsByClassName("color");
+    const sizebutton = document.getElementsByClassName("size");
+    const fontbutton = document.getElementsByClassName("font");
+
+    for (let i = 0; i < colorbutton.length; i++) {
+      colorbutton[i].addEventListener("click", (e) => {
+        para.style = "";
+        para.style.color = e.target.value;
+      });
+    }
+
+    for (let i = 0; i < sizebutton.length; i++) {
+      sizebutton[i].addEventListener("click", (e) => {
+        para.style = "";
+        para.style.fontSize = `${e.target.value}px`;
+      });
+    }
+
+    for (let i = 0; i < fontbutton.length; i++) {
+      fontbutton[i].addEventListener("click", (e) => {
+        para.style = "";
+        para.style.fontFamily = e.target.value;
+      });
+    }
+  </script>
+</html>
